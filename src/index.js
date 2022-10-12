@@ -28,6 +28,7 @@ const displayTodo = () => {
 };
 displayTodo();
 
+// Add Todo Function
 const addTodo = (e) => {
   e.preventDefault();
   const userInput = todoInput.value.trim();
@@ -48,6 +49,7 @@ const addTodo = (e) => {
 
 formInput.addEventListener('submit', addTodo);
 
+// Delete Todo Function
 const deleteTodo = (index) => {
   const newTodo = todos.filter((element) => element.index !== index);
   todos.length = 0;
